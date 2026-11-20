@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="230" viewBox="0 0 960 230" role="img" aria-labelledby="title desc">
+  <title id="title">Ko Yamasaki research terminal</title>
+  <desc id="desc">A terminal command and an animated two-terminal series-parallel graph.</desc>
+  <defs>
+    <style>
+      .frame{fill:#f6f8fa;stroke:#d1d9e0}.bar{fill:#eaeef2}.fg{fill:#1f2328}.muted{fill:#59636e}.edge{fill:none;stroke:#59636e;stroke-width:3;stroke-linecap:round}.flow{fill:none;stroke:#0969da;stroke-width:3.5;stroke-linecap:round;stroke-dasharray:18 190;animation:trace 3.6s linear infinite}.node{fill:#f6f8fa;stroke:#59636e;stroke-width:3}.terminal{fill:#ddf4ff;stroke:#0969da;stroke-width:3}.cursor{fill:#0969da;animation:blink 1.05s steps(1,end) infinite}.mono{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}.prompt{font-size:18px}.label{font-size:15px;font-weight:600}
+      @media(prefers-color-scheme:dark){.frame{fill:#0d1117;stroke:#30363d}.bar{fill:#161b22}.fg{fill:#f0f6fc}.muted{fill:#9da7b3}.edge{stroke:#8b949e}.node{fill:#0d1117;stroke:#8b949e}.terminal{fill:#0c2d4a;stroke:#58a6ff}.flow{stroke:#58a6ff}.cursor{fill:#58a6ff}}
+      @keyframes trace{to{stroke-dashoffset:-208}}
+      @keyframes blink{0%,48%{opacity:1}49%,100%{opacity:0}}
+      @media(prefers-reduced-motion:reduce){.flow,.cursor{animation:none}.flow{stroke-dasharray:none;opacity:.65}.cursor{opacity:1}}
+    </style>
+  </defs>
+  <rect class="frame" x="1.5" y="1.5" width="957" height="227" rx="14" stroke-width="3"/>
+  <path class="bar" d="M15 3h930a12 12 0 0 1 12 12v31H3V15A12 12 0 0 1 15 3z"/>
+  <circle cx="25" cy="24" r="6" fill="#ff5f56"/><circle cx="45" cy="24" r="6" fill="#ffbd2e"/><circle cx="65" cy="24" r="6" fill="#27c93f"/>
+  <text class="mono muted" x="480" y="30" text-anchor="middle" font-size="13">research@ko: ~</text>
+  <text class="mono fg prompt" x="35" y="82">ko@github:~$ man ko-yamasaki</text>
+  <rect class="cursor" x="375" y="65" width="11" height="22" rx="1"/>
+  <g transform="translate(212 24)">
+    <path class="edge" d="M80 135L218 82L356 135M80 135L218 188L356 135"/>
+    <path class="flow" d="M80 135L218 82L356 135M80 135L218 188L356 135"/>
+    <circle class="terminal" cx="80" cy="135" r="13"/>
+    <circle class="node" cx="218" cy="82" r="9"/>
+    <circle class="node" cx="218" cy="188" r="9"/>
+    <circle class="terminal" cx="356" cy="135" r="13"/>
+    <text class="mono fg label" x="80" y="140" text-anchor="middle">s</text>
+    <text class="mono fg label" x="356" y="140" text-anchor="middle">t</text>
+  </g>
+  <text class="mono muted" x="925" y="191" font-size="14" text-anchor="end">structure → algorithm → evidence</text>
+</svg>

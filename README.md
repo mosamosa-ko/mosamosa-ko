@@ -1,78 +1,90 @@
-<div align="center">
-<pre>ko@github:~$ ./research --focus graph
-          ┌──○──○──┐
-     (s)──┤        ├──(t)
-          └──○──○──┘
-GRAPH ALGORITHMS :: NETWORK SCIENCE</pre>
-
-<h1>Ko Yamasaki</h1>
-
-<p>
-  B.Sc. candidate in Intelligent Systems at Hiroshima City University<br>
-  Incoming master's student at Institute of Science Tokyo · April 2027
+<p align="center">
+  <img src="./assets/research-terminal.svg" width="100%" alt="Animated TTSP graph terminal showing the command man ko-yamasaki">
 </p>
 
-<p>
-  <a href="https://koyamasaki.com">website</a>
-  &nbsp;·&nbsp;
-  <a href="https://github.com/mosamosa-ko?tab=repositories">repositories</a>
-</p>
-</div>
-
-## 01 / research
-
-```yaml
-problem:    graph-grammar membership testing
-domain:     two-terminal series-parallel graphs
-approach:   structural decomposition + algorithms
-status:     undergraduate research in progress
-visibility: private
+```text
+KO-YAMASAKI(7)              Research Manual              KO-YAMASAKI(7)
 ```
 
-I study how the recursive structure of TTSP graphs can support algorithms for deciding membership in graph-grammar languages. Results are not presented as complete or proved until they have been reviewed and are ready for release.
+## NAME
 
-## 02 / build
+**Ko Yamasaki** — graph algorithms student building verifiable software for graph-structured problems
 
-### [`graph-algorithms-lab`](https://github.com/mosamosa-ko/graph-algorithms-lab)
+## SYNOPSIS
+
+```console
+$ ko-yamasaki \
+    --research graph-grammar-membership \
+    --domain ttsp-graphs \
+    --methods decomposition,dynamic-programming \
+    --next institute-of-science-tokyo
+```
+
+## DESCRIPTION
+
+Fourth-year undergraduate student in Intelligent Systems at **Hiroshima City University**. Incoming master's student at **Institute of Science Tokyo** in April 2027, with research interests spanning graph algorithms, graph mining, graph neural networks, and network science.
+
+The working principle is simple: define the object precisely, implement the algorithm transparently, and keep mathematical guarantees separate from experimental evidence.
+
+## RESEARCH
+
+```text
+SUBJECT     membership testing for graph grammars
+OBJECT      two-terminal series-parallel graphs
+APPROACH    structural decomposition + algorithms
+STATE       undergraduate research in progress
+ACCESS      private; unpublished results are not exposed
+```
+
+The current work studies how the recursive structure of TTSP graphs can support algorithms for deciding membership in graph-grammar languages. No claim is presented as complete or proved before review.
+
+## PROJECTS
+
+### [`graph-algorithms-lab(1)`](https://github.com/mosamosa-ko/graph-algorithms-lab)
 
 [![CI](https://github.com/mosamosa-ko/graph-algorithms-lab/actions/workflows/ci.yml/badge.svg)](https://github.com/mosamosa-ko/graph-algorithms-lab/actions/workflows/ci.yml)
 
-A public, independent implementation lab for graph algorithms and TTSP networks.
-
-| Layer | What is implemented |
-| --- | --- |
-| **Structure** | Typed multigraphs, traversal, connectivity, series/parallel composition |
-| **Algorithms** | TTSP generation, reduction-based recognition, S/P decomposition trees |
-| **Verification** | pytest, exhaustive small instances, independent reference checks |
-| **Experiments** | Reproducible benchmarks with raw measurements and environment metadata |
-
-`Python 3.11+` · `pytest` · `Ruff` · `GitHub Actions`
-
-## 03 / interests
-
 ```text
-structure     graph algorithms · formal graph models · decomposition
-learning      graph mining · graph neural networks · explainable AI
-networks      network science · relational data · dynamic graphs
+STRUCTURE       typed multigraphs, traversal, connectivity, S/P composition
+ALGORITHMS      TTSP generation, recognition, decomposition trees, tree DP
+VERIFICATION    pytest, exhaustive small instances, independent oracles
+EXPERIMENTS     reproducible benchmarks + retained environment metadata
+TOOLCHAIN       Python 3.11+ / Ruff / GitHub Actions / Git
 ```
 
-## 04 / method
+Public and independently implemented from general graph theory and published literature. It does not contain private undergraduate-research code or data.
+
+## METHOD
 
 ```text
-definition
-    └──> algorithm
-            └──> typed implementation
-                    └──> independent checks
-                            └──> reproducible experiment
+definition(1)
+    └── algorithm(2)
+          └── typed-implementation(3)
+                └── independent-checks(4)
+                      └── reproducible-experiment(5)
 ```
 
-I keep mathematical guarantees separate from empirical evidence. My work emphasizes explicit assumptions, testable interfaces, small-instance enumeration, independent oracles, and reproducible measurements.
+## INTERESTS
 
-## 05 / research queue
+```text
+STRUCTURE    graph algorithms / formal graph models / decomposition
+LEARNING     graph mining / graph neural networks / explainable AI
+NETWORKS     network science / relational data / dynamic graphs
+```
 
-| Stage | Project | Intended scope |
-| --- | --- | --- |
-| `planned` | `gnn-from-scratch` | Message passing and GNN layers with tiny-graph reference checks |
-| `planned` | `dynamic-graph-bench` | Correctness-first evaluation of algorithms under graph updates |
+## QUEUE
 
-<p align="center"><sub>building from definitions, testing every layer</sub></p>
+```text
+gnn-from-scratch(1)      [planned]  inspectable message-passing models
+dynamic-graph-bench(1)   [planned]  correctness-first update benchmarks
+```
+
+These entries are plans, not completed repositories.
+
+## SEE ALSO
+
+[`koyamasaki.com`](https://koyamasaki.com) · [`repositories(5)`](https://github.com/mosamosa-ko?tab=repositories) · [`graph-algorithms-lab(1)`](https://github.com/mosamosa-ko/graph-algorithms-lab)
+
+```text
+KO-YAMASAKI(7)                    2026                    KO-YAMASAKI(7)
+```
